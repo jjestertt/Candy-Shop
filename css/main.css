@@ -29,6 +29,7 @@ body {
    height: 1px;
    position: absolute;
    top: 40%;
+   left: 45%;
    border-radius: 50%;
    background: #020100;
    z-index: 0;
@@ -40,22 +41,30 @@ body {
    animation-timing-function: cubic-bezier(0.6, 0.4, 1, 0.96);
    animation-iteration-count: infinite;
 }
+.bg-title:nth-child(2) {
+   left: 55%;
+   animation-delay: 4s;
+}
+
 .animation-container {
-   width: 300px;
+   position: relative;
+   /* width: 300px; */
    height: 80px;
    display: flex;
    justify-content: space-between;
 }
 .col {
    position: relative;
-   width: 25px;
-   height: 100%;
+   width: 80px;
+   height: 80px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
    cursor: pointer;
+   border-radius: 50%;
    transition-duration: 1s;
+   margin: 0 -20px;
 }
 
 .circle {
@@ -65,6 +74,7 @@ body {
    animation-iteration-count: infinite;
    z-index: 2;
 }
+
 .line {
    position: absolute;
    height: 70px;
@@ -86,7 +96,7 @@ body {
    color: white;
    position: absolute;
    top: 0%;
-   left: 15px;
+   left: 45px;
    height: 75px;
    width: 25px;
    overflow: hidden;
@@ -96,9 +106,7 @@ body {
    transition-duration: 0.3s;
    writing-mode: vertical-rl;
    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
-   filter: blur(0.1px);
 }
-
 .col:nth-child(1) .circle,
 .col:nth-child(1) .line {
    animation-delay: 0.1s;
@@ -151,6 +159,8 @@ body {
    animation-name: anim-circle-1;
 }
 .circle:nth-child(3) {
+   position: absolute;
+   top: 60px;
    width: 20px;
    height: 20px;
    background: rgb(232, 108, 112);
@@ -162,10 +172,13 @@ body {
 }
 
 .col:hover {
-   width: 100px;
    transform: rotate(90deg);
-   margin: 0 10px;
+   margin: 0 15px;
 }
+.col:nth-child(1):hover {
+   margin: 0 15px 0 0;
+}
+
 .col:hover .circle:nth-child(1),
 .col:hover .circle:nth-child(3),
 .col:hover .line {
@@ -180,6 +193,9 @@ body {
    transform: translateY(0) rotate(-180deg) scale(1);
    opacity: 1;
 }
+.col:hover .text {
+   left: 10px;
+}
 
 @keyframes anim-circle-1 {
    50% {
@@ -188,7 +204,7 @@ body {
 }
 @keyframes anim-circle-2 {
    50% {
-      transform: translateY(-65px) scale(0.5);
+      transform: translateY(-65px) scale(0.4);
    }
 }
 @keyframes anim-line {
