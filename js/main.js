@@ -4,9 +4,16 @@ const description = document.querySelector('.description');
 const logoBlock = document.querySelector('.block-logo');
 const titleBlock = document.querySelector('.block-title');
 const contentWrapper = document.querySelector('.content-wrapper');
+const load = document.querySelector('.load');
 
 
 const animationContainer = document.querySelector('.animation-container');
+
+const setLoad = setTimeout(() => {
+   load.classList.remove('active');
+   clearTimeout(setLoad);
+}, 2000);
+
 
 const handleMenuItemClick = (e) => {
    e.preventDefault();
