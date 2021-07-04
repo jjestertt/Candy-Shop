@@ -59,7 +59,7 @@ h1 {
 .block-logo {
    position: absolute;
    top: 18px;
-   left: 16px;
+   left: 30px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -127,6 +127,7 @@ h1 {
 }
 .menu-icon{
    position: relative;
+   margin-right: 15px;
    width: 40px;
    height: 40px;
 }
@@ -333,7 +334,6 @@ h1 {
    height: 0;
    border-radius: 5px;
    background: #e8f6ef;
-   /* transition: height; */
    transition-duration: 1s;
    transition-delay: 0s ;
 }
@@ -341,7 +341,7 @@ h1 {
 .content-wrapper.active {
    transition-duration: 1s;
    transition-delay: 1s;
-   height: 75vh;
+   height: 85vh;
    opacity: 1;
 }
 
@@ -367,3 +367,19 @@ h1 {
       box-shadow: 4px 4px 100px 54px rgba(241, 211, 2, 0.2);
    }
 }
+
+
+
+/* scroll */
+
+::-webkit-scrollbar { /* 1 - скроллбар */
+   border-radius: 5px;
+    width: 7px;
+    height: 4px;
+    background-color: #FFFFFF;
+  }
+  ::-webkit-scrollbar-thumb { /* 5 - ползунок */
+    border-radius: 2px;
+    background-color: #d1d1d1;
+  }
+
