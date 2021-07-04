@@ -30,12 +30,14 @@ const handleMenuItemClick = (e) => {
 
 const handleMenuClick = (e) => {
    e.preventDefault();
-   logoBlock.classList.add('active');
-   animationContainer.classList.add('active');
-   description.innerHTML = e.currentTarget.getAttribute('value');
-   titleBlock.classList.add('active');
-   menu.classList.add('active');
-   contentWrapper.classList.remove('active');
+   if (!menu.classList.contains('active')) {
+      logoBlock.classList.add('active');
+      animationContainer.classList.add('active');
+      description.innerHTML = e.currentTarget.getAttribute('value');
+      titleBlock.classList.add('active');
+      menu.classList.add('active');
+      contentWrapper.classList.remove('active');
+   }
 }
 
 menuLinks.forEach(item => {
@@ -43,3 +45,4 @@ menuLinks.forEach(item => {
 });
 
 menu.addEventListener('click', handleMenuClick)
+logoBlock.addEventListener('click', handleMenuClick)

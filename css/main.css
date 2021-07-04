@@ -74,9 +74,11 @@ h1 {
    filter: blur(2px);
    transition: transform 1.3s ease-in-out, filter 1.3s ease-in-out, top 1.3s ease-in-out, left 1.3s ease-in-out;
    transition-delay: 0s;
+   cursor: pointer;
 }
 
 .block-logo.active {
+   cursor: inherit;
    transition-delay: 1s;
    transition-duration: 0.7s ;
    top: 50%;
