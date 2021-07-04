@@ -165,7 +165,7 @@ h1 {
 }
 
 .animation-container {
-   padding-top: 40vh;
+   padding-top: 45vh;
    opacity: 0;
    position: relative;
    height: 80px;
@@ -176,7 +176,7 @@ h1 {
 }
 .animation-container.active {
    transition-delay: 1s;
-   padding-top: 33vh;
+   padding-top: 40vh;
    opacity: 1;
 }
 
