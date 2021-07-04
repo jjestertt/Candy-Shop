@@ -5,14 +5,16 @@ const logoBlock = document.querySelector('.block-logo');
 const titleBlock = document.querySelector('.block-title');
 const contentWrapper = document.querySelector('.content-wrapper');
 const load = document.querySelector('.load');
+const container = document.querySelector('.container');
 
 
 const animationContainer = document.querySelector('.animation-container');
 
-const setLoad = setTimeout(() => {
+const initialize = setTimeout(() => {
    load.classList.remove('active');
-   clearTimeout(setLoad);
-}, 2000);
+   container.classList.add('active');
+   clearTimeout(initialize);
+}, 1500);
 
 
 const handleMenuItemClick = (e) => {
