@@ -79,7 +79,7 @@ particlesJS('particles-js',
             }
          },
          "opacity": {
-            "value": 0.2,
+            "value": 0.5,
             "random": true,
             "anim": {
                "enable": false,
@@ -119,7 +119,7 @@ particlesJS('particles-js',
             }
          }
       },
-      "retina_detect": true,
+      "retina_detect": false,
    }
 
 );
