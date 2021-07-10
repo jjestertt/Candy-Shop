@@ -50,13 +50,12 @@ logoBlock.addEventListener('click', handleMenuClick)
 
 
 particlesJS('particles-js',
-
    {
       "particles": {
          "number": {
             "value": 80,
             "density": {
-               "enable": true,
+               "enable": false,
                "value_area": 800
             }
          },
@@ -70,7 +69,7 @@ particlesJS('particles-js',
                "color": "#000000"
             },
             "polygon": {
-               "nb_sides": 5
+               "nb_sides": 1
             },
             "image": {
                "src": "img/github.svg",
